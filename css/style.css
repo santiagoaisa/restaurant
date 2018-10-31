@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 #encabezado{
     background: url(../img/hero01.png);
     height: 400px;
@@ -33,4 +38,79 @@ ul{
 .menu:hover{
     border: 1px solid #000000;
     padding: 10px;
+}
+
+#contenedor{
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+#articulo-izquierda{
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    background: #999999;
+    margin: auto;
+    
+}
+
+#articulo-centro{
+    float:left;
+    width: 33.33%;
+    box-sizing: border-box;
+    background: #999999;
+    margin: auto;
+    
+}
+
+#articulo-derecha{
+    float:left;
+    width:33.33%;
+    box-sizing: border-box;
+    background: #999999;
+    margin: auto;
+    
+}
+
+h2{
+    font: Georgia;
+    color: black;
+}
+
+@media(max-width: 480px){
+
+	#articulo-izquierda{
+        float: none;
+       
+        
+    }
+    
+    #articulo-centro{
+        float: none;
+        
+    }
+    
+    #articulo-derecha{
+        float: none;
+        
+    }
+
+        
+    #nav-principal  li{
+        
+        display: block;
+    }
+
+    #encabezado{
+        background: url(../img/hero01_480.png) no-repeat;
+        height: 200px;
+        max-width: 100%;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
 }
